@@ -1,0 +1,60 @@
+{
+  "_readme": "Settings for hedge_tracker.py. Paths are relative to this file. Demand shapes are read from shape_workbook; everything else (strips, volumes, coverage, origin weights) is edited here. All products, volumes and weights below are illustrative examples.",
+
+  "price_parquet": "data/us_propane_priceindex.parquet",
+  "lpg_dir": "data/LPG",
+  "shape_workbook": "data/demand_shapes.xlsx",
+  "output_workbook": "Hedge Product Tracker.xlsx",
+  "history_csv": "hedge_tracker_history.csv",
+
+  "_history_start": "First price date tracked. Anchored so the look-back keeps growing as new days arrive. Set to null to use a rolling window of lookback_years instead.",
+  "history_start": "2023-09-14",
+  "lookback_years": 3,
+
+  "_origin_blend": "Mt B TET = Enterprise (TEPPCO / Texas Eastern system); Mt B Non-TET = LST. Weights must sum to 1.",
+  "origin_blend": [
+    {"origin": "Mt B TET",     "index": "NGL fixed price - Financial Mont Belvieu Propane Enterprise", "weight": 0.35},
+    {"origin": "Mt B Non-TET", "index": "NGL fixed price - Financial Mont Belvieu Propane LST",        "weight": 0.35},
+    {"origin": "Conway",       "index": "NGL fixed price - Financial Conway Propane",                  "weight": 0.30}
+  ],
+  "blend_check_index": "US Propane Blend",
+
+  "products": [
+    {
+      "code": "FIX",
+      "name": "Annual Fixed Price",
+      "shape_label": "Annual Fixed",
+      "start_month": 6,
+      "months": 12,
+      "strip_start_years": [2027, 2028, 2029],
+      "hedge_deadline_month": 4,
+      "annual_volume_gal": null,
+      "hedge_coverage": 0.90,
+      "notes": "Jun-May fixed-price program, hedged to 90% of shaped volume by end of April. Volume left blank, so gallons and notional are not shown."
+    },
+    {
+      "code": "CAP",
+      "name": "Annual Capped Price",
+      "shape_label": "Annual Capped",
+      "start_month": 10,
+      "months": 12,
+      "strip_start_years": [2027, 2028, 2029],
+      "hedge_deadline_month": 9,
+      "annual_volume_gal": 10000000,
+      "hedge_coverage": 1.00,
+      "notes": "Oct-Sep delivery, contracted in September."
+    },
+    {
+      "code": "WIN",
+      "name": "Winter",
+      "shape_label": "Winter",
+      "start_month": 10,
+      "months": 6,
+      "strip_start_years": [2027, 2028, 2029],
+      "hedge_deadline_month": 9,
+      "annual_volume_gal": 5000000,
+      "hedge_coverage": 1.00,
+      "notes": "Oct-Mar winter strip."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "_readme": "Friendly names shown in the web app. Edit freely - these are display-only. Keys are the workbook's area code without the season (e.g. 'MT-WY' for 'MT-WY 26-27 Working.xlsm'). Anything not listed here is named automatically from its state codes. Restart the web app after editing.",
+
+  "regions": {
+    "Alaska":      { "title": "Alaska",            "tagline": "Alaska operations" },
+    "Midwest":     { "title": "Midwest",           "tagline": "Great Lakes and Upper Midwest" },
+    "New England": { "title": "New England",       "tagline": "New England and upstate New York" },
+    "Northeast":   { "title": "Northeast",         "tagline": "Mid-Atlantic, Ohio Valley and Kentucky" },
+    "PNW":         { "title": "Pacific Northwest", "tagline": "Washington, Oregon and Idaho" },
+    "Rail":        { "title": "Rail",              "tagline": "Rail-supplied terminals and districts" },
+    "Rockies":     { "title": "Rockies",           "tagline": "Mountain West" },
+    "South":       { "title": "South",             "tagline": "Texas, Oklahoma, Louisiana, Arkansas and Missouri" },
+    "Southeast":   { "title": "Southeast",         "tagline": "Carolinas, Georgia, Florida and the Mid-South" },
+    "West":        { "title": "West",              "tagline": "California, Nevada and Arizona" }
+  },
+
+  "areas": {
+    "Alaska":            { "title": "Alaska",                         "states": "AK" },
+    "IL-IN":             { "title": "Illinois & Indiana",             "states": "IL · IN" },
+    "MI":                { "title": "Michigan",                       "states": "MI" },
+    "WI-IA-MN":          { "title": "Wisconsin, Iowa & Minnesota",    "states": "WI · IA · MN" },
+    "New England":       { "title": "New England",                    "states": "ME · NH · VT · MA · CT · RI · NY" },
+    "Northeast":         { "title": "Northeast",                      "states": "PA · VA · MD · NJ · DE · WV" },
+    "OH-KY":             { "title": "Ohio & Kentucky",                "states": "OH · KY" },
+    "PNW (non-rail)":    { "title": "Pacific Northwest",              "states": "WA · OR · ID", "note": "Truck-supplied (non-rail)" },
+    "East Rail":         { "title": "East Rail",                      "note": "Rail-supplied, eastern network" },
+    "West Rail District":{ "title": "West Rail Districts",            "note": "Rail-supplied districts" },
+    "West Rail Terminal":{ "title": "West Rail Terminals",            "note": "Rail-supplied terminals" },
+    "MT-WY":             { "title": "Montana & Wyoming",              "states": "MT · WY" },
+    "UT-CO":             { "title": "Utah & Colorado",                "states": "UT · CO" },
+    "MO-LA-AR":          { "title": "Missouri, Louisiana & Arkansas", "states": "MO · LA · AR" },
+    "NM-W TX":           { "title": "New Mexico & West Texas",        "states": "NM · TX" },
+    "S LA":              { "title": "South Louisiana",                "states": "LA" },
+    "S TX":              { "title": "South Texas",                    "states": "TX" },
+    "TX-OK":             { "title": "Texas & Oklahoma",               "states": "TX · OK" },
+    "Carolinas":         { "title": "The Carolinas",                  "states": "NC · SC" },
+    "FL Spur":           { "title": "Florida Spur",                   "states": "FL" },
+    "GA-TN-MS-AL":       { "title": "Georgia, Tennessee, Mississippi & Alabama", "states": "GA · TN · MS · AL" },
+    "AZ":                { "title": "Arizona",                        "states": "AZ" },
+    "CA-NV":             { "title": "California & Nevada",            "states": "CA · NV" }
+  }
+}
