@@ -1,5 +1,0 @@
-pandas==2.3.3
-numpy==2.5.3
-pyarrow==23.0.1
-openpyxl==3.1.5
-snowflake-connector-python[pandas]==4.8.0
