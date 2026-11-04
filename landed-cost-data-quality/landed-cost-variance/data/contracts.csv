@@ -1,5 +1,0 @@
-contract_id,supplier,route,index_name,pricing_rule,summer_premium,winter_premium
-NOR26TP00001,Northstar Midstream,Delivered rail,Gulf Hub TET,same_day,0.15,0.25
-PIN26TP00002,Pinecrest Supply,Remote rail,Gulf Hub TET,same_day,-0.04,0.04
-BLU26TP00003,Bluewater Energy,Port spot trucks,Gulf Hub Non-TET,prior_business_day,0.22,0.3
-RED26TP00004,Redrock Terminals,Terminal trucks,None (terminal cost),none,,
